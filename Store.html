@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="Store.css">
+    <link rel="stylesheet" type="text/css" href="styles/store.css">
     <title>Store</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 </head>
+
 <body>
     <div class="product-card">
         <h1 class="hebir">Jordan Ayakkabı </h1>
@@ -13,25 +15,26 @@
         <div class="product-pic"></div>
         <div class="product-colors">
             <span class="blue active" data-color="#ff9366" data-pic="url(https://serving.photos.photobox.com/78768272e8def6ba6e0b65cc8be0012384738ffa846e6521cac3e58af0c286d6267b44f8.jpg)"></span>
-            <span class="green"data-color="#a80b00" data-pic="url(https://serving.photos.photobox.com/720209491a7fabd3cee92cc2deb785907d90b794e9f54211eed0f74488f7a3b3d335ed32.jpg)"></span>       
-            <span class="yellow"data-color="#d5b615" data-pic="url(https://serving.photos.photobox.com/01674403932126ead0e79adfb2bcab171c765bcd39734055e48b5dbf488a87f52948d178.jpg)"></span>
-            <span class="rose"data-color="#7f8c8d"  data-pic="url(https://serving.photos.photobox.com/21024660a9c7e218f74bedcf798c9b7b5c28d051c0ed9ac8254ea5725eda176f9464c247.jpg)"></span>
+            <span class="green" data-color="#a80b00" data-pic="url(https://serving.photos.photobox.com/720209491a7fabd3cee92cc2deb785907d90b794e9f54211eed0f74488f7a3b3d335ed32.jpg)"></span>
+            <span class="yellow" data-color="#d5b615" data-pic="url(https://serving.photos.photobox.com/01674403932126ead0e79adfb2bcab171c765bcd39734055e48b5dbf488a87f52948d178.jpg)"></span>
+            <span class="rose" data-color="#7f8c8d" data-pic="url(https://serving.photos.photobox.com/21024660a9c7e218f74bedcf798c9b7b5c28d051c0ed9ac8254ea5725eda176f9464c247.jpg)"></span>
         </div>
-    <div class="product-info">
-    <div class="product-price">₺100</div>
-    <a href="#" class="product-button">Sepete Ekle</a>
+        <div class="product-info">
+            <div class="product-price">₺100</div>
+            <a href="#" class="product-button">Sepete Ekle</a>
+        </div>
     </div>
-  </div>
-  <script>
-      $(".product-colors span").click(function(){
-      $(".product-colors span").removeClass("active");
-      $(this).addClass("active");
-      $("body").css("background",$(this).attr("data-color"));
-      $(".product-price").css("color",$(this).attr("data-color"));
-      $(".product-button").css("color",$(this).attr("data-color"));
-      $(".product-pic").css("background-image",$(this).attr("data-pic"));
-      $(".hebir").css("color",$(this).attr("data-color"));
-  });
-  </script>
+    <script>
+        $(".product-colors span").click(function() {
+            $(".product-colors span").removeClass("active");
+            $(this).addClass("active");
+            $("body").css("background", $(this).attr("data-color"));
+            $(".product-price").css("color", $(this).attr("data-color"));
+            $(".product-button").css("color", $(this).attr("data-color"));
+            $(".product-pic").css("background-image", $(this).attr("data-pic"));
+            $(".hebir").css("color", $(this).attr("data-color"));
+        });
+    </script>
 </body>
+
 </html>
